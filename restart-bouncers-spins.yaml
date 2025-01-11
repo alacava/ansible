@@ -4,6 +4,6 @@
   become: true
   become_user: root
   tasks:
-     - name: This command will change the working directory to somedir/
+     - name: Restarts custom bouncer and removes all decisions
        ansible.builtin.shell:
           cmd: systemctl restart crowdsec-custom-bouncer && cscli decisions delete --all
