@@ -1,0 +1,9 @@
+---
+- hosts: spins
+  
+  become: true
+  become_user: root
+  tasks:
+     - name: This command will change the working directory to somedir/
+       ansible.builtin.shell:
+          cmd: systemctl restart crowdsec-custom-bouncer && cscli decisions delete --all
