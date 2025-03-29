@@ -7,6 +7,6 @@
      - name: Install tailscale
        ansible.builtin.shell:
           cmd: curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=tskey-auth-kx7DvPyFsC21CNTRL-SXxeu7TKU6PgQ4NSkZ8o5Pg9kzPWwCfE --hostname=$HOSTNAME
-     - name: Install proxmox agent
-       ansible.builtin.shell:
-          cmd: apt-get install qemu-guest-agent -y && systemctl start qemu-guest-agent && systemctl enable qemu-guest-agent && shutdown now
+#     - name: Install proxmox agent
+#       ansible.builtin.shell:
+#          cmd: apt-get install qemu-guest-agent -y && systemctl start qemu-guest-agent && systemctl enable qemu-guest-agent && shutdown now
