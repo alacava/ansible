@@ -1,5 +1,5 @@
 ---
-- name: Install Tailscale
+- name: Install Tailscale Now
   hosts: all
   become: true
   tasks:
