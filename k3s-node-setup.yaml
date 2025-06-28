@@ -21,7 +21,7 @@
 
     - name: Join Tailscale
        ansible.builtin.shell:
-         cmd: tailscale up --auth-key=tskey-auth-kx7DvPyFsC21CNTRL-SXxeu7TKU6PgQ4NSkZ8o5Pg9kzPWwCfE --hostname=$HOSTNAME
+         cmd: tailscale up --auth-key=tskey-auth-kavwaucvab11CNTRL-bGiMr5WQMwAVb6fM2mmxwAtzZ8hnmZ3Hf --hostname=$HOSTNAME
 
 #    - name: Install proxmox agent
 #      ansible.builtin.shell:
